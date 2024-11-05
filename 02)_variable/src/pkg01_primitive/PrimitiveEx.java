@@ -15,7 +15,7 @@ public class PrimitiveEx {
     //2. short :2바이트 정수
     short b=32767;
     System.out.println(b);
-    //3. int : 4바이트 정수 -기본 정수임 
+    //3. int : 4바이트 정수 -기본 정수임  integer
     int c= 2147483647;
     System.out.println(c);
     //4. long: 8바이트 정수 int로 커버 불가능한 값에서 사용 long타입의 값은 마지막에 L또는l을 넣어야함 (int)범위를 벗어난 애들은 필수임 아니면 생략가능
@@ -35,6 +35,19 @@ public class PrimitiveEx {
     //8. boolean : 이론상 1비트 실제로는 JVM이 담당함 
     boolean h = true;
     System.out.println(h);
+    //변수 스코프(scope)
+    //변수가 선언된 중괄호{} 내부에서만 접근이 가능함 
+    {
+      int x =10;
+      System.out.println(x);
+    }
+    //x =20;  스코프 외부에서는 적용이 안됨 -지역변수  
+    //상수 constant variable 
+    //값을 바꿀 수 없는 것 반드시 초기 할당이 필요함 
+    //final 키워드를 변수 선언 시 추가한다. 관례상 변수 명은 대문자로 작성한다. 
+    final double PI = 3.14;
+    System.out.println(PI);
+    
   }
 
 }
