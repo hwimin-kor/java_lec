@@ -14,7 +14,7 @@ public class Ex04 {
     
     for(i=0; number>0; i++) {
              binary[i]=number%2;
-             number/=2
+             number/=2;
     }
     System.out.println(Arrays.toString(binary));
     
