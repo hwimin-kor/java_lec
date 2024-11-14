@@ -62,7 +62,7 @@ public class ArrayListEx {
     String [] words= {"봄", "여름", "가을","겨울"};
     List<String>seasons = Arrays.asList(words);
     
-    for(int i = 0, size=seasons.size(); i<size; i++) {            //size()메소드는 한번만 호출할 수 있도록 변수로 처리한다/ 
+    for(int i = 0, size=seasons.size(); i<size; i++) {            //size()메소드는 한번만 호출할 수 있도록 초기화 영역에서 변수로 처리한다. 
       System.out.println(seasons.get(i));
     }
     for(int i = 0; i<words.length; i++) {
