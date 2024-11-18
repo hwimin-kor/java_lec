@@ -2,7 +2,7 @@ package pkg03_return;
 
 import java.util.Arrays;
 
-public class ReturnEx {
+public class ReturnEx{
 
   public static void main(String[] args) {
     // Sample 타입의 인스턴스 s 생성 

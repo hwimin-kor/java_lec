@@ -1,4 +1,4 @@
-package pk02_parameter;
+package pkg02_parameter;
 
 public class ParameterEx {
 

@@ -17,8 +17,7 @@ public class CartEx {
       
       // 물건 넣기
       customer.addToCart(new Product("맛동산", 3000));
-      customer.addToCart(new Product("양파링",
-          2000));
+      customer.addToCart(new Product("양파링", 2000));
       customer.addToCart(new Product("홈런볼", 5000));
       customer.addToCart(new Product("스윙칩", 1500));
       

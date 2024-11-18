@@ -5,17 +5,17 @@ import java.util.Arrays;
 public class Ex02 {
 
   public static void main(String[] args) {
-    // 알파벳 대문자 (A~Z)배열에 저장하기
     
-char[] abc=new char[26];
+    // 알파벳 대문자 ('A', 'B', ... 'Z') -> 배열에 저장하기
     
-    for(int i=0; i<abc.length; i++) {
-      abc[i]=(char)('A'+i);
+    char[] uppers = new char[26];
+    
+    for(int i = 0; i < uppers.length; i++) {
+      uppers[i] = (char) ('A' + i);
     }
-      System.out.print(Arrays.toString(abc));
     
-  
+    System.out.println(Arrays.toString(uppers));
+
   }
 
 }
-//아스키코드 활용 하기 

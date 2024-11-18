@@ -1,4 +1,5 @@
 package pkg09_BankAccount;
+
 public class BankAccount {
 
   private String accNo;
@@ -8,41 +9,41 @@ public class BankAccount {
     this.accNo = accNo;
     this.balance = balance;
   }
-   
+  
   /**
    * 입금 처리. 
    * @param money 입금액.
-   * @exception 마이너스 입금액 불가.
+   * @throws DepositException 마이너스 금액 입금 불가. 코드 1000.
    */
-  public void deposit(long money)throws DepositException {
-      if(money < 0)
-        throw new DepositException(money + "원은 입금할 수 없습니다.",1000);
-      balance += money;      
-
+  public void deposit(long money) throws DepositException {
+    if(money < 0)
+      throw new DepositException(money + "원은 입금할 수 없습니다.", 1000);
+    balance += money;
   }
   
   /**
    * 출금 처리.
-   * @param money 출금액.
+   * @param money 출금액. 
    * @return 실제 출금액.
-   * @exception 마이너스 출금 불가.
-   * @exception 잔액보다 큰 금액 출금 불가.
+   * @throws WithdrawalException 마이너스 출금 불가(코드 2000). 잔액보다 큰 금액 출금 불가(코드 2001).
    */
-  public long withdrawal(long money) {
-      if(money < 0)
-        throw new WithdrawalException(money + "원은 출금할 수 없습니다.",2000);
-      if(money > balance)
-        throw new WithdrawalException("잔액이 부족합니다.",2001);
-      balance -= money;
-      return money;
-    } 
+  public long withdrawal(long money) throws WithdrawalException {
+    if(money < 0)
+      throw new WithdrawalException(money + "원은 출금할 수 없습니다.", 2000);
+    if(money > balance)
+      throw new WithdrawalException("잔액이 부족합니다.", 2001);
+    balance -= money;
+    return money;
+  }
   
   /**
    * 이체 처리.
    * @param bankAccount 이체할 계좌 정보
    * @param money 이체할 금액
+   * @throws DepositException 입금 예외.
+   * @throws WithdrawalException 출금 예외.
    */
-  public void transfer(BankAccount bankAccount, long money) throws DepositException, WithdrawalException{
+  public void transfer(BankAccount bankAccount, long money) throws DepositException, WithdrawalException {
     bankAccount.deposit(this.withdrawal(money));
   }
   

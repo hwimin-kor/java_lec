@@ -11,7 +11,7 @@ public class ParsingEx {
    System.out.println(b);
    double c= Double.parseDouble("30.0");
    System.out.println(c);
-    //변환이 불가능한 경우 NumberFormatException 예외 발생
+    //변환이 불가능한 경우 NumberFormatception 예외 발생
    Integer.parseInt("");
    }
 

@@ -34,7 +34,7 @@ public class Customer {
    * @param bakery 구매할 빵집
    * @param bread 구매하려는 빵의 갯수
    * @param money 구매할 때 낼 돈
-   * @exception 구매할 돈이 부족한 경우
+   * @ception 구매할 돈이 부족한 경우
    */
   public void buy(Bakery bakery, int bread, int money) {
     

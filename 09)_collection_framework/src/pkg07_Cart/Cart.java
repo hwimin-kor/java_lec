@@ -41,7 +41,7 @@ public class Cart {
       throw new RuntimeException("존재하지 않는 인덱스입니다.");
     }
     
-    // remove(int index) 메소드는 삭제한 Product 을 반환한다.
+    // remove(int ind) 메소드는 삭제한 Product 을 반환한다.
     return products.remove(removeIdx);
     
   }

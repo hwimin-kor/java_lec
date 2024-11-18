@@ -15,7 +15,7 @@ public class ThrowEx {
       }
       
       System.out.println(score + "점을 획득했습니다.");
-       
+      
     } catch (Exception e) {
       
       System.out.println(e.getMessage());
@@ -33,5 +33,7 @@ public class ThrowEx {
     System.out.println(age + "살이군요.");
     
   }
+
+
 
 }

@@ -1,6 +1,6 @@
 package pkg05_field;
 
-public class FieldEx {
+public class FieldEx{
 
   public static void main(String[] args) {
     // Car타입의 인스턴스 car생성

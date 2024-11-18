@@ -6,7 +6,7 @@ package pkg10_interface.A_overview;
  * 
  * 클래스          인터페이스
  * 상속한다         구현한다
- * extends          implements  
+ * tends          implements  
  * 자식 클래스     구현 클래스 
  */
 
