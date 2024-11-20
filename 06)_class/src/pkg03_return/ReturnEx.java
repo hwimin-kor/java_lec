@@ -14,7 +14,9 @@ public class ReturnEx{
     System.out.println(s.methodB(1));
     System.out.println(s.methodB(2));
     System.out.println(s.methodB(3));
-    System.out.println(s.methodB(4));
+    System.out.println(s.methodB(4));// 케이스 123에 없기때문에 retunr이 첫 retValue 초기값으로 보낸다 
+
+   
     //methodC의 호출
     String[] parts = s.methodC();
     System.out.println(Arrays.toString(parts));

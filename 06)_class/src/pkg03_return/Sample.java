@@ -30,6 +30,8 @@ public class Sample {
       case 3:
       retValue="아인슈패너";
       break;
+      default:
+        retValue="없는 메뉴";
       }
       return retValue;
     }
